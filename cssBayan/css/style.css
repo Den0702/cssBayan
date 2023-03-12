@@ -1,11 +1,10 @@
 * {
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
 }
 
 .container {
-  width: 50%;
-  border: 2px solid rgb(201, 194, 194);
+  width: 90%;
+  border: 0.125rem solid #c9c2c2;
   margin: auto;
   /* padding-inline: 20px; */
 }
@@ -23,13 +22,18 @@ input {
 
 .accordion {
   margin: auto;/* nie dziala */
-  font-size: larger;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.picture {
+  max-width: 100%;
 }
 
 .accordion-open-close {
   opacity: 0;
   transition: all 0.3s;
-  height: 50px;
+  height: 1.688rem;
 }
 
 
@@ -49,7 +53,7 @@ label {
   flex-wrap: nowrap;
   margin: auto;
   cursor: pointer;
-  padding: 15px;
+  padding: 0.9rem;
 }
 
 .accordion-body {
@@ -58,11 +62,11 @@ label {
   overflow: hidden;
   transition: all 0.5s;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
-
 .accordion-item:focus {
-  border: 2px solid black;
+  border: 0.125rem solid black;
 }
 
 .accordion-item:active {
@@ -75,6 +79,33 @@ label {
 
 .accordion-item:hover .accordion-body,
 .accordion-item:focus .accordion-body {
-  height: 350px;
+  height: 21.9rem;
   opacity: 1;
+}
+
+@media screen and (min-width: 420px) {
+  .container {
+    width: 80%;
+  }
+  .accordion {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .container {
+    width: 70%;
+  }
+  .accordion {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    width: 65%;
+  }
+  .accordion {
+    font-size: 2rem;
+  }
 }
