@@ -1,0 +1,18 @@
+/* czy trzeba tu to dawac, jezeli w normalize css ta wlasciwosc jest ustawiona na niektore elementy */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-inline: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  display: none;
+}
+
