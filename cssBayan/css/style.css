@@ -1,18 +1,40 @@
-/* czy trzeba tu to dawac, jezeli w normalize css ta wlasciwosc jest ustawiona na niektore elementy */
 * {
   box-sizing: border-box;
 }
 
 .container {
   width: 100%;
-  padding-inline: 20px;
+  /* padding-inline: 20px; */
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 input {
   display: none;
 }
+
+.accordion {
+  margin: auto;/* nie dziala */
+  font-size: larger;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+.picture {
+  display: none;
+}
+
+input:checked ~ .picture {
+  display: block;
+}
+
 
